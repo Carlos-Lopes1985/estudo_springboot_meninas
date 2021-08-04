@@ -44,4 +44,15 @@ public class ClienteResource {
 
         return ResponseEntity.created(uri).body(clienteService.salvarCliente(cliente));
     }
+
+    @PutMapping
+    public ResponseEntity<?>editarCliente( @RequestBody Cliente cliente){
+
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(cliente.getId())
+                .toUri();
+
+        return ResponseEntity.created(uri).body(clienteService.editarCliente(cliente));
+    }
 }

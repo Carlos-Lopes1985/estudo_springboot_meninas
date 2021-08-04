@@ -29,7 +29,7 @@ public class EstudojavaApplication implements CommandLineRunner {
 		Cliente c2 = new Cliente();
 
 		c2.setName("Thayna");
-		c2.setCpf("11792993706");
+		c2.setCpfCnpj("11792993706");
 		c2.setDataNascimento(LocalDate.now());
 
 		//clienteRepository.save(c1);
