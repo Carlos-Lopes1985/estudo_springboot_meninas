@@ -18,17 +18,17 @@ public class Cliente implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private String cpf;
+    private String cpfCnpj;
     private LocalDate dataNascimento;
 
     public Cliente() {
     }
 
     //Entrada de dados
-    public Cliente(Long id, String name, String cpf, LocalDate dataNascimento) {
+    public Cliente(Long id, String name, String cpfCnpj, LocalDate dataNascimento) {
         this.id = id;
         this.name = name;
-        this.cpf = cpf;
+        this.cpfCnpj = cpfCnpj;
         this.dataNascimento = dataNascimento;
     }
 
@@ -40,8 +40,8 @@ public class Cliente implements Serializable {
         return name;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getCpfCnpj() {
+        return cpfCnpj;
     }
 
     public LocalDate getDataNascimento() {
@@ -56,8 +56,8 @@ public class Cliente implements Serializable {
         this.name = name;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setCpfCnpj(String cpfCnpj) {
+        this.cpfCnpj = cpfCnpj;
     }
 
     public void setDataNascimento(LocalDate dataNascimento) {

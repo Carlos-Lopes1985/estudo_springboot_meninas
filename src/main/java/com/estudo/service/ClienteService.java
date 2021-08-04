@@ -11,4 +11,6 @@ public interface ClienteService {
     Cliente listarUmCliente(Long id);
 
     Cliente salvarCliente(Cliente cliente);
+
+    Cliente editarCliente(Cliente cliente);
 }
